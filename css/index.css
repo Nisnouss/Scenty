@@ -9,6 +9,8 @@
     --grey: #475569;
     --darkblue: #0F172A;
     --purple: #4F46E5;
+    --darkgreen: #16A34A;
+    --lightgreen: #DCFCE7;
 }
 
 li{
@@ -61,6 +63,92 @@ header #Télécharger:hover{
     color: var(--darkblue);
     background-color: white;
     transition: all 0.3s ease-in-out;
+}
+
+/* Main */
+
+/* Section 1 */
+
+main .section1 div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+    max-width: 1152px;
+    align-items: center;
+}
+
+main .section1 div .title{
+    color: var(--purple);
+    font-size: 14px;
+    font-style: italic;
+    font-weight: bold;
+    padding: 15px 0;
+}
+
+main .section1 div h1{
+    font-size: 72px;
+    font-weight: bold;
+    color: var(--darkblue);
+    padding: 15px 0;
+}
+
+main .section1 div h1 #questions{
+    color: var(--purple);
+}
+
+main .section1 div p{
+    font-size: 16px;
+    color: var(--grey);
+    padding: 15px 0;
+}
+
+main .section1 div .btnapp{
+    display: flex;
+    gap: 30px;
+    padding: 15px 0;
+}
+
+main .section1 div .btnapp a img{
+    width: 18px;
+}
+
+main .section1 div .btnapp #appstore{
+    border: 1px solid var(--darkblue);
+    border-radius: 13px;
+    background-color: var(--darkblue);
+    padding: 10px 15px;
+    color: white;
+}
+
+main .section1 div .btnapp #playstore{
+    border: 1px solid var(--darkblue);
+    border-radius: 13px;
+    padding: 10px 15px;
+    color: var(--darkblue);
+}
+
+main .section1 div img{
+    width: 100%;
+}
+
+main .section1 div .droite .span{
+    border: 1px solid white;
+    border-radius: 16px;
+    background-color: white;
+    position: absolute;
+    padding: 16px;
+    right: 0;
+    bottom: 0;
+    display: inline;
+}
+
+main .section1 div .droite .span .note{
+    color: var(--darkgreen);
+    font-weight: bold;
+    border: 1px solid var(--lightgreen);
+    background-color: var(--lightgreen);
+    border-radius: 30px;
+    padding: 10px;
 }
 
 /* Footer */
