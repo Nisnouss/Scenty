@@ -66,18 +66,47 @@ header #Télécharger:hover{
 /* Footer */
 
 footer{
-    display: flex;
+    background-color: var(--darkblue);
+    margin: auto;
     max-width: 1440px;
+    height: 160px;
+    display: flex;
+}
+
+footer div{
+    display: flex;
     margin: 20px auto;
+    max-width: 1152px;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    color: white;
+    gap: 60px;
 }
 
-footer img{
+footer div img{
     width: 110px;
 }
 
-footer nav ul{
+footer div nav ul{
     display: flex;
+    gap: 20px;
+}
+
+footer div nav ul a{
+    color: white;
+}
+
+footer div nav ul a:hover{
+    color: var(--purple);
+    transition: all 0.3s ease-in-out;
+}
+
+footer div p a{
+    color: white;
+}
+
+footer div p a:hover{
+    color: var(--purple);
+    transition: all 0.3s ease-in-out;
 }
