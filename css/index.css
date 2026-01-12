@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+*{
+    margin: 0;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+:root{
+    --grey: #475569;
+    --darkblue: #0F172A;
+    --purple: #4F46E5;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Header */
+
+header{
+    display: flex;
+    margin: 20px auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1152px;
+    align-items: center;
+}
+
+header img{
+    width: 129px;
+}
+
+header nav ul{
+    display: flex;
+    margin: auto;
+    gap: 20px;
+}
+
+header nav ul a{
+    color: var(--grey);
+}
+
+header nav ul a:hover{
+    color: var(--purple);
+    transition: all 0.3s ease-in-out;
+}
+
+header #Télécharger{
+    border: 1px solid var(--darkblue);
+    border-radius: 23px;
+    background-color: var(--darkblue);
+    color: white;
+    padding: 10px 15px;
+}
+
+header #Télécharger:hover{
+    color: var(--darkblue);
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+}
