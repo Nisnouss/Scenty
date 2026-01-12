@@ -62,3 +62,22 @@ header #Télécharger:hover{
     background-color: white;
     transition: all 0.3s ease-in-out;
 }
+
+/* Footer */
+
+footer{
+    display: flex;
+    max-width: 1440px;
+    margin: 20px auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer img{
+    width: 110px;
+}
+
+footer nav ul{
+    display: flex;
+}
