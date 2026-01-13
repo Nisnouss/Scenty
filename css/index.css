@@ -166,15 +166,31 @@ main .section2 p{
     color: var(--grey);
     font-size: 16px;
     margin: 10px auto;
+    margin-bottom: 80px;
+    max-width: 672px;
 }
 
 main .section2 div{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    gap: 60px;
     margin: 20px auto;
     max-width: 1104px;
     text-align: center;
+}
+
+main .section2 div h3{
+    text-align: justify;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--darkblue);
+}
+
+main .section2 div p{
+    text-align: justify;
+    font-size: 14px;
+    color: var(--grey);
 }
 
 main .section2 div #danger{
