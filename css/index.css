@@ -160,7 +160,8 @@ main .section1 div .droite .span{
     right: 60px;
     bottom: -300px;
     display: inline;
-    padding-left: 50px;
+    display: flex;
+    gap: 8px;
 }
 
 main .section1 div .droite .span .note{
@@ -170,9 +171,6 @@ main .section1 div .droite .span .note{
     background-color: var(--lightgreen);
     border-radius: 30px;
     padding: 10px;
-    position: relative;
-    right: 45px;
-    top: 35px;
 }
 
 /* Section 2 */
@@ -250,7 +248,13 @@ main .section3{
 main .section3 .sousdiv{
     display: block;
     margin: auto;
-    max-width: 430px;
+}
+
+main .section3 .sousdiv #number1,
+main .section3 .sousdiv #number2,
+main .section3 .sousdiv #number3{
+    display: flex;
+    gap: 4px;
 }
 
 main .section3 div{
@@ -302,9 +306,6 @@ main .section3 div #num{
     background-color: var(--purple);
     padding: 12px 16px;
     color: white;
-    position: relative;
-    right: 50px;
-    top: 35px;
 }
 
 /* Section 4 */
@@ -322,7 +323,7 @@ main .section4 div{
     max-width: 1152px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 60px;
+    gap: 120px;
 }
 
 main .section4 div .avis{
@@ -339,8 +340,8 @@ main .section4 div p{
 }
 
 main .section4 div #petitediv{
-    display: inline;
-    text-align: center;
+    display: flex;
+    gap: 8px;
 }
 
 main .section4 div #petitediv #violet{
@@ -367,14 +368,6 @@ main .section4 div #petitediv #vert{
     padding: 10px 15px;
 }
 
-main .section4 div #petitediv #violet,
-main .section4 div #petitediv #rose,
-main .section4 div #petitediv #vert{
-    position: relative;
-    left: 30px;
-    top: 25px;
-}
-
 /* Footer */
 
 footer{
@@ -383,6 +376,7 @@ footer{
     max-width: 1440px;
     height: 160px;
     display: flex;
+    flex-wrap: wrap;
 }
 
 footer div{
@@ -421,4 +415,77 @@ footer div p a{
 footer div p a:hover{
     color: var(--purple);
     transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 1024px){
+    header{
+        padding: 0 15px;
+    }
+
+    main .section1 div .droite .span h3{
+        font-size: 11px;
+    }
+
+    main .section1 div .droite .span p{
+        font-size: 8px;
+    }
+
+    main .section1 div .droite .span .note{
+        font-size: 8px;
+        padding: 12px 10px;
+    }
+
+    main .section1 div .droite .span{
+        position: absolute;
+        bottom: -70px;
+        right: 20px;
+    }
+
+    main .section2 div{
+        text-align: left;
+    }
+
+    main .section2 div h3{
+        text-align: left;
+        font-size: 18px;
+    }
+
+    main .section2 div p{
+        font-size: 14px;
+    }
+
+    main .section3 .sousdiv{
+        display: inline;
+        margin: auto;
+    }
+
+    main .section3 .sousdiv #number1 #artnum,
+    main .section3 .sousdiv #number2 #artnum,
+    main .section3 .sousdiv #number3 #artnum{
+        margin-top: 10px;
+    }
+
+    main .section4 div .avis #petitediv h3{
+        font-size: 14px;
+    }
+
+    main .section4 div .avis #petitediv p{
+        font-size: 12px;
+    }
+
+    main .section4 div{
+        gap: 40px;
+    }
+
+    main div{
+        padding: 0 15px;
+    }
+
+    footer{
+        padding: 0 15px;
+    }
+
+    footer div{
+        gap: 30px;
+    }
 }
