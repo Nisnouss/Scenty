@@ -489,3 +489,61 @@ footer div p a:hover{
         gap: 30px;
     }
 }
+
+@media screen and (max-width: 767px){
+    header{
+        padding: 0 15px;
+    }
+
+    header nav{
+        display: none;
+    }
+
+    main{
+        padding: 0 15px;
+    }
+
+    main .section1 div{
+        display: block;
+    }
+
+    main .section1 div h1{
+        font-size: 48px;
+    }
+
+    main .section1 div p{
+        font-size: 20px;
+    }
+
+    main .section1 div .droite .span{
+        display: none;
+    }
+
+    main .section2 h2{
+        font-size: 30px;
+    }
+
+    main .section2 div{
+        display: inline;
+    }
+
+    main .section3 div{
+        display: inline;
+    }
+
+    main .section4 h2{
+        font-size: 30px;
+    }
+
+    main .section4 div{
+        display: inline;
+    }
+
+    main .section4 div .avis{
+        margin-bottom: 20px;
+    }
+
+    footer{
+        padding: 0 15px;
+    }
+}
