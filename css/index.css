@@ -287,6 +287,7 @@ main .section3 div h3{
     color: var(--darkblue);
     font-weight: 700;
     font-size: 18px;
+    margin-bottom: 10px;
 }
 
 main .section3 div .p1{
@@ -420,6 +421,7 @@ footer div p a:hover{
 @media screen and (max-width: 1024px){
     header{
         padding: 0 15px;
+        display: flex;
     }
 
     main .section1 div .droite .span h3{
@@ -495,12 +497,26 @@ footer div p a:hover{
         padding: 0 15px;
     }
 
+    header a img{
+        width: 100px;
+    }
+
     header nav{
         display: none;
     }
 
     main{
         padding: 0 15px;
+    }
+
+    main .section1 div .btnapp{
+        flex-wrap: wrap;
+    }
+
+    main .section1 div .btnapp #appstore,
+    main .section1 div .btnapp #playstore{
+        width: -webkit-fill-available;
+        text-align: center;
     }
 
     main .section1 div{
@@ -527,8 +543,52 @@ footer div p a:hover{
         display: inline;
     }
 
+    main .section3 div h2{
+        margin: auto;
+        font-size: 28px;
+        margin-top: 20px;
+    }
+
+    main .section3 div .p1{
+        margin: auto;
+        font-size: 15px;
+    }
+
+    main .section3 div .sousdiv .p2{
+        font-size: 13px;
+        text-align: justify;
+    }
+
+    main .section3 div .sousdiv h3{
+        font-size: 15px;
+    }
+
+    main .section3 div article .sousdiv #number1,
+    main .section3 div article .sousdiv #number2,
+    main .section3 div article .sousdiv #number3{
+        margin-bottom: 20px;
+    }
+
+    main .section3 div .sousdiv #artnum #num{
+        padding: 8px 11px;
+    }
+
     main .section3 div{
         display: inline;
+        padding: 0 15px;
+        margin: auto;
+    }
+
+    main .section3 div article{
+        padding-right: 10px;
+    }
+
+    main .section3 div .divimg{
+        margin-bottom: 20px;
+    }
+
+    main .section3 div .divimg img{
+        width: 150px;
     }
 
     main .section4 h2{
@@ -545,5 +605,10 @@ footer div p a:hover{
 
     footer{
         padding: 0 15px;
+    }
+
+    footer div{
+        display: inline;
+        text-align: center;
     }
 }
