@@ -11,6 +11,7 @@
     --purple: #4F46E5;
     --darkgreen: #16A34A;
     --lightgreen: #DCFCE7;
+    --backgroundcolor: #F8FAFC;
 }
 
 li{
@@ -68,6 +69,12 @@ header #Télécharger:hover{
 /* Main */
 
 /* Section 1 */
+
+main .section1{
+    background-color: var(--backgroundcolor);
+    margin: auto;
+    max-width: 1440px;
+}
 
 main .section1 div{
     display: grid;
@@ -212,6 +219,137 @@ main .section2 div #book{
     background-color: #F3E8FF;
     border-radius: 16px;
     padding: 15px;
+}
+
+/* Section 3 */
+
+main .section3{
+    margin: auto;
+    max-width: 1440px;
+    background-color: var(--backgroundcolor);
+    display: flex;
+}
+
+main .section3 div{
+    margin: 30px auto;
+    max-width: 1104px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+}
+
+main .section3 div img{
+    max-width: 100%;
+    border: 13px solid white;
+    background-color: var(--backgroundcolor);
+    padding: 30px;
+    border-radius: 40px;
+}
+
+main .section3 div .divimg{
+    text-align: center;
+}
+
+main .section3 div h2{
+    font-weight: 800;
+    font-size: 36px;
+    color: var(--darkblue);
+}
+
+main .section3 div h3{
+    color: var(--darkblue);
+    font-weight: 700;
+    font-size: 18px;
+}
+
+main .section3 div .p1{
+    color: var(--grey);
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+main .section3 .p2{
+    font-size: 16px;
+    color: var(--grey);
+}
+
+main .section3 div #num{
+    border: 1px solid var(--purple);
+    border-radius: 180px;
+    background-color: var(--purple);
+    padding: 10px 15px;
+    color: white;
+    position: relative;
+    right: 50px;
+    top: 35px;
+}
+
+/* Section 4 */
+
+main .section4 h2{
+    text-align: center;
+    color: var(--darkblue);
+    font-size: 36px;
+    font-weight: 800;
+    margin: 30px auto;
+}
+
+main .section4 div{
+    margin: 20px auto;
+    max-width: 1152px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+}
+
+main .section4 div .avis{
+    border: 1px solid var(--backgroundcolor);
+    border-radius: 24px;
+    background-color: var(--backgroundcolor);
+    padding: 10px 15px;
+}
+
+main .section4 div p{
+    font-size: 16px;
+    font-style: italic;
+    color: var(--grey);
+}
+
+main .section4 div #petitediv{
+    display: inline;
+    text-align: center;
+}
+
+main .section4 div #petitediv #violet{
+    border: 1px solid #C7D2FE;
+    background-color: #C7D2FE;
+    color: var(--purple);
+    border-radius: 180px;
+    padding: 10px 15px;
+}
+
+main .section4 div #petitediv #rose{
+    border: 1px solid #FBCFE8;
+    background-color: #FBCFE8;
+    color: #BE185D;
+    border-radius: 180px;
+    padding: 10px 15px;
+}
+
+main .section4 div #petitediv #vert{
+    border: 1px solid #BBF7D0;
+    background-color: #BBF7D0;
+    color: #15803D;
+    border-radius: 180px;
+    padding: 10px 15px;
+}
+
+main .section4 div #petitediv #violet,
+main .section4 div #petitediv #rose,
+main .section4 div #petitediv #vert{
+    position: relative;
+    left: 30px;
+    top: 25px;
 }
 
 /* Footer */
