@@ -128,6 +128,18 @@ main .section1 div .btnapp #appstore{
     color: white;
 }
 
+main .section1 div .btnapp #appstore img{
+    position: relative;
+    right: 5px;
+    top: 3px;
+}
+
+main .section1 div .btnapp #appstore:hover,
+main .section1 div .btnapp #playstore:hover{
+    padding: 15px 25px;
+    transition: all 0.3s ease-in-out;
+}
+
 main .section1 div .btnapp #playstore{
     border: 1px solid var(--darkblue);
     border-radius: 13px;
